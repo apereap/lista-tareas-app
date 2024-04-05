@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class TareasService {
 
   private localStorageKey = 'listaTareas';
-
+  //no está funcionando correctamente getTareas
   getTareas():string[] {
     return JSON.parse(localStorage.getItem(this.localStorageKey) as string) || [];
   }
